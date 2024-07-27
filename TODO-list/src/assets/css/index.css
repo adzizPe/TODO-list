@@ -1,0 +1,127 @@
+.todo-title {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  .video-credit {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    color: white;
+    text-shadow: 0 0 7px rgba(0,0,0,0.9);
+    font-size: 14px;
+  }
+  .todo-title h1 {
+    display: flex;
+    gap: 900px;
+  }
+  
+  .todo-header {
+    position: relative;
+    top: -80px;
+  }
+  
+  .todo-header input {
+    width: 500px;
+    padding: 12px;
+    margin-right: 12px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .todo-header button {
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 6px 12px;
+    color:#F07205;
+  }
+  
+  .todo-body {
+    width: 560px;
+    padding: 12px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 24px;
+    list-style: none;
+    box-shadow: 4px 4px 4px 4px #dedede;
+    transform: translateX(-13px); 
+  }
+  
+  .todo-body span {
+    margin: 12px;
+    cursor: pointer;
+  }
+  
+  .todo-body .bi-pencil-square,
+  .bi-save2 {
+    color: #BA00E8;
+  }
+  
+  .todo-body .bi-trash-fill {
+    color: red;
+  }
+  
+  .todo-body .bi-check-circle-fill {
+    color: green;
+  }
+  
+  .todo-body li {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .todo-body .input-edit {
+    width: 400px;
+    padding-inline: 12px;
+    border-radius: 12px;
+  }
+  
+  .todo-footer {
+    width: 560px;
+    padding: 12px;
+    margin-inline: auto;
+    margin-bottom: 42px;
+    border-radius: 4px;
+    font-size: 16px;
+    transform: translateX(-15px);
+    list-style: none;
+    box-shadow: 4px 4px 4px 4px #dedede;
+  }
+  .btn-custom {
+    background-color: green; 
+    color: white; 
+  }
+  .btn-custom:focus, .btn-custom:active, .btn-custom:hover {
+    background-color: darkgreen; 
+    color: white; 
+  }
+ 
+  @media (max-width: 575.98px) {
+    .todo-header input {
+      width: 320px;
+    }
+  
+    .todo-title h1 {
+      display: flex;
+      gap: 50px;
+      font-size: 32px;
+      margin: 0px 12px 12px 12px;
+      text-align: center;
+    }
+  
+    .todo-body,
+    .todo-footer {
+      width: 380px;
+    }
+    .todo-body li,
+    .todo-body .input-edit {
+      max-width: 200px;
+    }
+  }
